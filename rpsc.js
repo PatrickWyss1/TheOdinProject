@@ -1,3 +1,10 @@
+document.getElementById('rbtn').addEventListener('click', playSingleRound('rock', getComputerChoice()));
+
+
+
+
+
+
 function getComputerChoice(){
     let rand = Math.floor(Math.random() * 3);
     switch (rand){
@@ -15,7 +22,7 @@ function getComputerChoice(){
 
 function playSingleRound(playerSelection, computerSelection){
 
-   
+   console.log("Playing round with user selection " + playerSelection);
     let playerSelectionLower = playerSelection.toLowerCase()
 
     if(computerSelection == "Rock!"){
